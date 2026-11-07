@@ -85,11 +85,11 @@ flowchart TD
         A8["Agent 8: Security Decision Agent<br/>(Risk Scoring & Policy Guardrail Gate)"]
     end
 
-    subgraph GATING{"Threat Confirmed?"}
+    subgraph GATING["Gating Layer 1"]
         G1{"Is Threat Confirmed?"}
     end
 
-    subgraph AUTH_GATE{"Response Authorized?"}
+    subgraph AUTH_GATE["Gating Layer 2"]
         G2{"Autonomous Policy Match?"}
     end
 

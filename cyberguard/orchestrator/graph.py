@@ -18,6 +18,7 @@ from cyberguard.agents.agent8_security_decision import SecurityDecisionAgent
 from cyberguard.agents.agent9_incident_response import IncidentResponseAgent
 from cyberguard.agents.agent10_monitoring_learning import MonitoringAndLearningAgent
 from cyberguard.orchestrator.error_recovery import ErrorRecoveryManager
+from cyberguard.storage.db import GLOBAL_DB
 
 logger = logging.getLogger("CyberGuard.Orchestrator")
 
@@ -143,6 +144,10 @@ class CyberGuardGraph:
         # Conditional Check 1: Threat Confirmed?
         if self.condition_is_threat_confirmed(state) == "NO":
             state = self.node_record_continue_monitoring(state)
+            try:
+                GLOBAL_DB.record_incident(state)
+            except Exception as e:
+                logger.warning(f"DB persistence error: {e}")
             logger.info("=== Autonomous Workflow Completed: Baseline Normal ===")
             return state
 
@@ -157,6 +162,10 @@ class CyberGuardGraph:
             state = self.node_incident_response(state)
         else:
             logger.warning("Defensive response rejected by enterprise policy constraints.")
+            try:
+                GLOBAL_DB.record_incident(state)
+            except Exception as e:
+                logger.warning(f"DB persistence error: {e}")
             return state
 
         # Conditional Check 3: Verify Threat Containment
@@ -165,6 +174,12 @@ class CyberGuardGraph:
             state = self.node_monitoring_and_learning(state)
         else:
             state = self.node_recovery_and_escalate(state)
+
+        # Step 8: Persist to ACID Database & Append Cryptographic Audit Chain
+        try:
+            GLOBAL_DB.record_incident(state)
+        except Exception as e:
+            logger.warning(f"DB persistence error: {e}")
 
         logger.info(f"=== CyberGuard AI Autonomous Workflow Completed [Session: {state.session_id}] ===")
         return state

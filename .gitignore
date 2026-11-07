@@ -39,6 +39,7 @@ env/
 # Logs and databases
 *.log
 *.sqlite3
+*.db
 data/*.db
 data/cache/
 .coverage
