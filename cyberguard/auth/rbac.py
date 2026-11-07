@@ -105,3 +105,4 @@ class RBACManager:
             return False
 
 GLOBAL_RBAC = RBACManager()
+

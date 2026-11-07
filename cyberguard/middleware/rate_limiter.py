@@ -40,3 +40,4 @@ class TokenBucketRateLimiter:
         return int(min(float(self.capacity), tokens + (elapsed * self.refill_rate)))
 
 GLOBAL_RATE_LIMITER = TokenBucketRateLimiter(capacity=100, refill_rate_per_sec=5.0)
+
