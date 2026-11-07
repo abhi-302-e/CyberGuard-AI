@@ -56,3 +56,4 @@ class SecurityDataCollectionAgent(BaseCyberAgent):
             "recommendations": ["Forward normalized event queue to Security Data Analysis Agent"],
             "data": {"normalized_events": normalized, "invalid_count": invalid_count}
         }
+

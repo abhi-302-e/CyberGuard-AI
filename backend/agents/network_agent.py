@@ -58,3 +58,4 @@ class NetworkMonitoringAgent(BaseCyberAgent):
             "recommendations": ["Inspect endpoint sockets associated with flagged destination IPs"],
             "data": {"network_anomalies": network_anomalies}
         }
+

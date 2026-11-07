@@ -71,3 +71,4 @@ class AutomatedIncidentResponseAgent(BaseCyberAgent):
                 "containment_successful": containment_success
             }
         }
+

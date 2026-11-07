@@ -116,3 +116,4 @@ class ThreatIntelligenceAgent(BaseCyberAgent):
                 "threat_confirmed": threat_confirmed
             }
         }
+

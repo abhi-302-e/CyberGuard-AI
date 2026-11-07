@@ -53,3 +53,4 @@ class MonitoringAndLearningAgent(BaseCyberAgent):
             "recommendations": ["Close incident case and archive auditable cryptographic records"],
             "data": {"metrics": metrics}
         }
+

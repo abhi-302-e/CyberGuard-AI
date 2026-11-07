@@ -73,3 +73,4 @@ class SecurityDataAnalysisAgent(BaseCyberAgent):
                 "noise_reduction_pct": noise_ratio
             }
         }
+

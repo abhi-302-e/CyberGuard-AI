@@ -26,11 +26,19 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install Flask pytest
+          pip install Flask pytest streamlit altair pandas
 
-      - name: Run Multi-Agent Unit & Orchestration Tests
+      - name: Run Core Multi-Agent Unit & Orchestration Tests
         run: |
           python -m unittest discover tests
+
+      - name: Run Backend Services & Integration Tests
+        run: |
+          python -m unittest discover backend/tests
+
+      - name: Validate Streamlit Command Center
+        run: |
+          python -m py_compile streamlit_app.py
 
       - name: Execute End-to-End Autonomous Simulation Scenarios
         run: |

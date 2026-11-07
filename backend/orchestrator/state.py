@@ -25,3 +25,4 @@ def create_initial_state(raw_events: List[Dict[str, Any]]) -> Dict[str, Any]:
         "audit_trail": [],
         "errors": []
     }
+

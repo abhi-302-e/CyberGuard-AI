@@ -173,3 +173,4 @@ class Report(Base):
     summary = Column(Text)
     markdown_content = Column(Text)
     download_url = Column(String(255), nullable=True)
+

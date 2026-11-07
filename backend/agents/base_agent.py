@@ -70,3 +70,4 @@ class BaseCyberAgent(ABC):
     def process(self, state: Dict[str, Any]) -> Dict[str, Any]:
         """Core specialized processing logic."""
         pass
+

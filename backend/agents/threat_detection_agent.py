@@ -94,3 +94,4 @@ class ThreatDetectionAgent(BaseCyberAgent):
             "recommendations": ["Correlate threat detections with CVE vulnerabilities and network flows"],
             "data": {"threats": detected_threats}
         }
+
