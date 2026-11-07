@@ -91,3 +91,4 @@ class MonitoringMetrics:
     mean_time_to_respond_ms: float = 45.0
     feedback_notes: List[str] = field(default_factory=list)
     rule_updates_proposed: List[Dict[str, Any]] = field(default_factory=list)
+

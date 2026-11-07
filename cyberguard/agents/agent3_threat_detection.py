@@ -113,3 +113,4 @@ class ThreatDetectionAgent(BaseAgent):
         state.threat_detections = detections
         self.logger.info(f"Threat Detection Agent identified {len(detections)} potential attack threats.")
         return state
+

@@ -52,3 +52,4 @@ class SecurityDataCollectionAgent(BaseAgent):
         state.normalized_events = normalized_events
         self.logger.info(f"Ingested and normalized {len(normalized_events)} security telemetry events.")
         return state
+

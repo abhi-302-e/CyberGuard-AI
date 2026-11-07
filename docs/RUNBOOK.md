@@ -68,3 +68,4 @@ curl http://localhost:5000/api/metrics
 ### Reviewing Gated Incidents
 When an action targets a critical Tier-0 asset (e.g. Active Directory Domain Controller `10.0.0.1`), CyberGuard AI gates the containment action and marks `status: AWAITING_HUMAN_APPROVAL`.
 The incident commander reviews the ticket in Jira and executes sign-off via the API.
+

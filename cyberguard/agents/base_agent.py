@@ -80,3 +80,4 @@ class BaseAgent(ABC):
         """Graceful degradation / fallback strategy."""
         self.logger.warning(f"Executing default fallback policy for {self.name}")
         return state
+

@@ -45,3 +45,4 @@ Autonomous AI systems operating in cybersecurity environments represent high-val
 | **Action Guardrails** | Tier-0 Asset Gating & destructive command prohibition | Agent 8 (`SecurityDecisionAgent`) |
 | **Tamper Resistance** | Append-only execution audit trail | `CyberGuardState.audit_trail` |
 | **Continuous Learning Integrity** | Minimum confidence floor (0.40) and max ceiling (1.50) | `GLOBAL_LEARNING_ENGINE` |
+

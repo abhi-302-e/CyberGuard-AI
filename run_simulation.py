@@ -70,3 +70,4 @@ def run_cli_scenario(name: str = "storm_2603"):
 if __name__ == "__main__":
     chosen = sys.argv[1] if len(sys.argv) > 1 else "storm_2603"
     run_cli_scenario(chosen)
+

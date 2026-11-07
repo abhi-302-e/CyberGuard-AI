@@ -185,3 +185,4 @@ def get_scenario_benign_baseline() -> List[Dict[str, Any]]:
             "metadata": {"auth_method": "publickey"}
         }
     ]
+

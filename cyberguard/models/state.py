@@ -98,3 +98,4 @@ class CyberGuardState:
             "audit_trail": [a.__dict__ for a in self.audit_trail],
             "errors": self.errors
         }
+

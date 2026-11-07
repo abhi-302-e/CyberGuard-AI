@@ -84,3 +84,4 @@ class NetworkMonitoringAgent(BaseAgent):
         state.network_anomalies = anomalies
         self.logger.info(f"Network Monitoring Agent detected {len(anomalies)} traffic anomalies.")
         return state
+

@@ -101,3 +101,4 @@ class MalwareAnalysisResult:
     mitre_tactics: List[str] = field(default_factory=list)
     sandbox_verdict: str = "CLEAN"
     recommended_quarantine: bool = False
+

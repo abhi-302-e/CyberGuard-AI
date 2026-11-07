@@ -91,3 +91,4 @@ class ErrorRecoveryManager:
                 for act in state.decision_plan.actions:
                     if act.action_type.value in ["DELETE_REMOTE_SYSTEM_FILES", "SHUTDOWN_ENTERPRISE_ROUTER"]:
                         raise ValueError(f"Safety Violation: Unauthorized destructive action '{act.action_type.value}' proposed!")
+

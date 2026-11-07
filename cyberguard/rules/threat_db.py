@@ -122,3 +122,4 @@ YARA_RULES: List[Dict[str, Any]] = [
         "family": "AsyncRAT Trojan"
     }
 ]
+

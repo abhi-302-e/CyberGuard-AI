@@ -39,3 +39,4 @@ jobs:
           python run_simulation.py has_ransomware
           python run_simulation.py rogue_ai
           python run_simulation.py benign
+

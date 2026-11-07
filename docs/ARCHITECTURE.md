@@ -122,3 +122,4 @@ Agent 10 feeds verified operational results back into `GLOBAL_LEARNING_ENGINE`:
 1. **True Positive Reinforcement:** When containment is verified and threat is neutralized, matching detection rule weights are boosted by $+0.05$ (up to a ceiling of $1.50\times$).
 2. **False Positive Suppression:** Unconfirmed or disputed alerts decrement rule weights by $-0.10$ (down to a floor of $0.40\times$).
 3. **Closed-Loop Rule Optimization:** Ensures the system becomes progressively sharper, adapting to evolving adversary TTPs over time.
+

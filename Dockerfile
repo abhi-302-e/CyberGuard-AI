@@ -29,3 +29,4 @@ RUN python -m unittest discover tests
 EXPOSE 5000 8080
 
 CMD ["python", "-m", "cyberguard.ui.dashboard"]
+
