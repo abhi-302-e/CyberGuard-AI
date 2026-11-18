@@ -1,6 +1,6 @@
 <div align="center">
 
-# ---🛡️ CyberGuard AI---
+# 🛡️ CyberGuard AI
 ### Autonomous Multi-Agent Cybersecurity Decision Intelligence System
 
 [![CI Pipeline](https://github.com/abhi-302-e/CyberGuard-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/abhi-302-e/CyberGuard-AI/actions)
